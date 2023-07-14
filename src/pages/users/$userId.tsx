@@ -1,9 +1,12 @@
 import { useParams } from '@tanstack/router'
+import { useEffect } from 'react';
 
-export default function UserProfile() {
+export default function UserProfilePage() {
   const { userId } = useParams();
 
-  console.log('userId', userId);
+  useEffect(() => {
+    console.log('userId', userId);
+  }, [userId]);
 
   return (
     <div>{userId}</div>

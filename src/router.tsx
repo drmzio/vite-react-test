@@ -1,14 +1,13 @@
 import { RootRoute, Route, Router, RouterProvider, lazy } from '@tanstack/router'
-import DefaultRoot from './components/DefaultRoot'
+import DefaultRoot from './components/router/DefaultRoot'
+import NotFound from './components/router/NotFound'
 
 const rootRoute = new RootRoute({
   component: DefaultRoot
 })
 
 const modules = import.meta.glob('./pages/**/*.tsx');
-console.log('modules', modules);
-
-let pages = [];
+const routes = [];
 
 for (const path in modules) {
   let [page] = path.substring(8, path.length).split('.');
@@ -19,9 +18,7 @@ for (const path in modules) {
   page = page.replace('index', '');
   let pagePath = ('/' + page);
 
-  console.log('pagePath', pagePath);
-
-  pages.push(
+  routes.push(
     new Route({
       getParentRoute: () => rootRoute,
       path: pagePath,
@@ -31,8 +28,13 @@ for (const path in modules) {
   );
 }
 
-console.log(pages);
-console.log(Object.keys(modules))
+routes.push(
+  new Route({
+    getParentRoute: () => rootRoute,
+    path: '*',
+    component: NotFound,
+  })
+);
 
 // for (const path in modules) {
 //   let [page, ext] = path.substring(7, path.length).split('.');
@@ -47,9 +49,9 @@ console.log(Object.keys(modules))
 //   console.log({ path, page, ext });
 // }
 
-console.log('pages', pages);
+console.log('ROUTES', routes);
 
-const routeTree = rootRoute.addChildren(pages)
+const routeTree = rootRoute.addChildren(routes)
 
 const router = new Router({ routeTree })
 

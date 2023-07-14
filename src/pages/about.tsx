@@ -1,5 +1,52 @@
-export default function About() {
+import { Link } from '@tanstack/router';
+
+export default function AboutPage() {
   return (
-    <div>Hello from about!</div>
+    <div>
+      <h3>Hello from about!</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis saepe eaque praesentium explicabo sapiente sint. Nam accusantium nobis consequuntur dolor minima dolores culpa obcaecati, unde aliquam. Exercitationem, eaque. Ipsam, inventore.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis saepe eaque praesentium explicabo sapiente sint. Nam accusantium nobis consequuntur dolor minima dolores culpa obcaecati, unde aliquam. Exercitationem, eaque. Ipsam, inventore.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis saepe eaque praesentium explicabo sapiente sint. Nam accusantium nobis consequuntur dolor minima dolores culpa obcaecati, unde aliquam. Exercitationem, eaque. Ipsam, inventore.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis saepe eaque praesentium explicabo sapiente sint. Nam accusantium nobis consequuntur dolor minima dolores culpa obcaecati, unde aliquam. Exercitationem, eaque. Ipsam, inventore.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis saepe eaque praesentium explicabo sapiente sint. Nam accusantium nobis consequuntur dolor minima dolores culpa obcaecati, unde aliquam. Exercitationem, eaque. Ipsam, inventore.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis saepe eaque praesentium explicabo sapiente sint. Nam accusantium nobis consequuntur dolor minima dolores culpa obcaecati, unde aliquam. Exercitationem, eaque. Ipsam, inventore.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis saepe eaque praesentium explicabo sapiente sint. Nam accusantium nobis consequuntur dolor minima dolores culpa obcaecati, unde aliquam. Exercitationem, eaque. Ipsam, inventore.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis saepe eaque praesentium explicabo sapiente sint. Nam accusantium nobis consequuntur dolor minima dolores culpa obcaecati, unde aliquam. Exercitationem, eaque. Ipsam, inventore.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis saepe eaque praesentium explicabo sapiente sint. Nam accusantium nobis consequuntur dolor minima dolores culpa obcaecati, unde aliquam. Exercitationem, eaque. Ipsam, inventore.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis saepe eaque praesentium explicabo sapiente sint. Nam accusantium nobis consequuntur dolor minima dolores culpa obcaecati, unde aliquam. Exercitationem, eaque. Ipsam, inventore.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis saepe eaque praesentium explicabo sapiente sint. Nam accusantium nobis consequuntur dolor minima dolores culpa obcaecati, unde aliquam. Exercitationem, eaque. Ipsam, inventore.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis saepe eaque praesentium explicabo sapiente sint. Nam accusantium nobis consequuntur dolor minima dolores culpa obcaecati, unde aliquam. Exercitationem, eaque. Ipsam, inventore.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis saepe eaque praesentium explicabo sapiente sint. Nam accusantium nobis consequuntur dolor minima dolores culpa obcaecati, unde aliquam. Exercitationem, eaque. Ipsam, inventore.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis saepe eaque praesentium explicabo sapiente sint. Nam accusantium nobis consequuntur dolor minima dolores culpa obcaecati, unde aliquam. Exercitationem, eaque. Ipsam, inventore.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis saepe eaque praesentium explicabo sapiente sint. Nam accusantium nobis consequuntur dolor minima dolores culpa obcaecati, unde aliquam. Exercitationem, eaque. Ipsam, inventore.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis saepe eaque praesentium explicabo sapiente sint. Nam accusantium nobis consequuntur dolor minima dolores culpa obcaecati, unde aliquam. Exercitationem, eaque. Ipsam, inventore.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis saepe eaque praesentium explicabo sapiente sint. Nam accusantium nobis consequuntur dolor minima dolores culpa obcaecati, unde aliquam. Exercitationem, eaque. Ipsam, inventore.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis saepe eaque praesentium explicabo sapiente sint. Nam accusantium nobis consequuntur dolor minima dolores culpa obcaecati, unde aliquam. Exercitationem, eaque. Ipsam, inventore.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis saepe eaque praesentium explicabo sapiente sint. Nam accusantium nobis consequuntur dolor minima dolores culpa obcaecati, unde aliquam. Exercitationem, eaque. Ipsam, inventore.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis saepe eaque praesentium explicabo sapiente sint. Nam accusantium nobis consequuntur dolor minima dolores culpa obcaecati, unde aliquam. Exercitationem, eaque. Ipsam, inventore.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis saepe eaque praesentium explicabo sapiente sint. Nam accusantium nobis consequuntur dolor minima dolores culpa obcaecati, unde aliquam. Exercitationem, eaque. Ipsam, inventore.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis saepe eaque praesentium explicabo sapiente sint. Nam accusantium nobis consequuntur dolor minima dolores culpa obcaecati, unde aliquam. Exercitationem, eaque. Ipsam, inventore.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis saepe eaque praesentium explicabo sapiente sint. Nam accusantium nobis consequuntur dolor minima dolores culpa obcaecati, unde aliquam. Exercitationem, eaque. Ipsam, inventore.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis saepe eaque praesentium explicabo sapiente sint. Nam accusantium nobis consequuntur dolor minima dolores culpa obcaecati, unde aliquam. Exercitationem, eaque. Ipsam, inventore.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis saepe eaque praesentium explicabo sapiente sint. Nam accusantium nobis consequuntur dolor minima dolores culpa obcaecati, unde aliquam. Exercitationem, eaque. Ipsam, inventore.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis saepe eaque praesentium explicabo sapiente sint. Nam accusantium nobis consequuntur dolor minima dolores culpa obcaecati, unde aliquam. Exercitationem, eaque. Ipsam, inventore.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis saepe eaque praesentium explicabo sapiente sint. Nam accusantium nobis consequuntur dolor minima dolores culpa obcaecati, unde aliquam. Exercitationem, eaque. Ipsam, inventore.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis saepe eaque praesentium explicabo sapiente sint. Nam accusantium nobis consequuntur dolor minima dolores culpa obcaecati, unde aliquam. Exercitationem, eaque. Ipsam, inventore.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis saepe eaque praesentium explicabo sapiente sint. Nam accusantium nobis consequuntur dolor minima dolores culpa obcaecati, unde aliquam. Exercitationem, eaque. Ipsam, inventore.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis saepe eaque praesentium explicabo sapiente sint. Nam accusantium nobis consequuntur dolor minima dolores culpa obcaecati, unde aliquam. Exercitationem, eaque. Ipsam, inventore.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis saepe eaque praesentium explicabo sapiente sint. Nam accusantium nobis consequuntur dolor minima dolores culpa obcaecati, unde aliquam. Exercitationem, eaque. Ipsam, inventore.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis saepe eaque praesentium explicabo sapiente sint. Nam accusantium nobis consequuntur dolor minima dolores culpa obcaecati, unde aliquam. Exercitationem, eaque. Ipsam, inventore.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis saepe eaque praesentium explicabo sapiente sint. Nam accusantium nobis consequuntur dolor minima dolores culpa obcaecati, unde aliquam. Exercitationem, eaque. Ipsam, inventore.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis saepe eaque praesentium explicabo sapiente sint. Nam accusantium nobis consequuntur dolor minima dolores culpa obcaecati, unde aliquam. Exercitationem, eaque. Ipsam, inventore.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis saepe eaque praesentium explicabo sapiente sint. Nam accusantium nobis consequuntur dolor minima dolores culpa obcaecati, unde aliquam. Exercitationem, eaque. Ipsam, inventore.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis saepe eaque praesentium explicabo sapiente sint. Nam accusantium nobis consequuntur dolor minima dolores culpa obcaecati, unde aliquam. Exercitationem, eaque. Ipsam, inventore.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis saepe eaque praesentium explicabo sapiente sint. Nam accusantium nobis consequuntur dolor minima dolores culpa obcaecati, unde aliquam. Exercitationem, eaque. Ipsam, inventore.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis saepe eaque praesentium explicabo sapiente sint. Nam accusantium nobis consequuntur dolor minima dolores culpa obcaecati, unde aliquam. Exercitationem, eaque. Ipsam, inventore.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis saepe eaque praesentium explicabo sapiente sint. Nam accusantium nobis consequuntur dolor minima dolores culpa obcaecati, unde aliquam. Exercitationem, eaque. Ipsam, inventore.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis saepe eaque praesentium explicabo sapiente sint. Nam accusantium nobis consequuntur dolor minima dolores culpa obcaecati, unde aliquam. Exercitationem, eaque. Ipsam, inventore.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis saepe eaque praesentium explicabo sapiente sint. Nam accusantium nobis consequuntur dolor minima dolores culpa obcaecati, unde aliquam. Exercitationem, eaque. Ipsam, inventore.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis saepe eaque praesentium explicabo sapiente sint. Nam accusantium nobis consequuntur dolor minima dolores culpa obcaecati, unde aliquam. Exercitationem, eaque. Ipsam, inventore.</p>
+      <Link to="/users">Users</Link>
+    </div>
   )
 }
