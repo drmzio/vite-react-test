@@ -17,7 +17,7 @@ const rootRoute = new RootRoute({
 })
 
 const modules = import.meta.glob('./pages/**/*.tsx');
-console.log(modules);
+console.log('modules', modules);
 
 let pages = [];
 
@@ -36,7 +36,8 @@ for (const path in modules) {
     new Route({
       getParentRoute: () => rootRoute,
       path: pagePath,
-      component: lazy(() => import(path)),
+      // @ts-ignore
+      component: lazy(/* @vite-ignore */ modules[path]),
     })
   );
 }
