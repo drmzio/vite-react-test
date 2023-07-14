@@ -68,12 +68,6 @@ const routeTree = rootRoute.addChildren(pages)
 
 const router = new Router({ routeTree })
 
-declare module '@tanstack/router' {
-  interface Register {
-    router: typeof router
-  }
-}
-
 export default router;
 
 export { RouterProvider }
