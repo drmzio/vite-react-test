@@ -1,23 +1,8 @@
-import { Link, Outlet, RootRoute, Route, Router, RouterProvider, lazy } from '@tanstack/router'
-// import Root from './pages/__layout'
-
-function Root() {
-  return (
-    <div>
-      {/* @ts-ignore */}
-      <Link to={`/`}>Home</Link>{` | `}
-      <Link to={`/about`}>About</Link>{` | `}
-      <Link to={`/users`}>Users</Link>{` | `}
-      <Link to={`/users/new`}>New user</Link>{` | `}
-      <Link to={`/users/$userId`} params={{ userId: 123 }}>User 123</Link>
-      <hr />
-      <Outlet />
-    </div>
-  )
-}
+import { RootRoute, Route, Router, RouterProvider, lazy } from '@tanstack/router'
+import DefaultRoot from './components/DefaultRoot'
 
 const rootRoute = new RootRoute({
-  component: Root
+  component: DefaultRoot
 })
 
 const modules = import.meta.glob('./pages/**/*.tsx');
