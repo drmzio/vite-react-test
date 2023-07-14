@@ -5,7 +5,11 @@ function Root() {
   return (
     <div>
       {/* @ts-ignore */}
-      <Link to={`/`}>Home</Link>{` | `}<Link to={`/about`}>About</Link>{` | `}<Link to={`/users`}>Users</Link>{` | `}<Link to={`/users/new`}>New user</Link>
+      <Link to={`/`}>Home</Link>{` | `}
+      <Link to={`/about`}>About</Link>{` | `}
+      <Link to={`/users`}>Users</Link>{` | `}
+      <Link to={`/users/new`}>New user</Link>{` | `}
+      <Link to={`/users/$userId`} params={{ userId: 123 }}>User 123</Link>
       <hr />
       <Outlet />
     </div>
@@ -63,6 +67,12 @@ console.log('pages', pages);
 const routeTree = rootRoute.addChildren(pages)
 
 const router = new Router({ routeTree })
+
+declare module '@tanstack/router' {
+  interface Register {
+    router: typeof router
+  }
+}
 
 export default router;
 
